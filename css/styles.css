@@ -1,0 +1,828 @@
+/* ARIMO FONT */
+@font-face {
+  font-family: "form-font";
+  src: url("../fonts/Arimo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "main-font";
+  src: url("../fonts/akira.otf");
+  /* Adjust the relative path */
+}
+
+@font-face {
+  font-family: "sub-font";
+  src: url("../fonts/tahomareg.ttf");
+}
+
+@font-face {
+  font-family: "sub-font-bold";
+  src: url(../fonts/TAHOMAB0.TTF);
+}
+
+@font-face {
+  font-family: "arimo-bold";
+  src: url(../fonts/Arimo-Bold.ttf);
+}
+
+@font-face {
+  font-family: "arimo-reg";
+  src: url(../fonts/Arimo-Regular.ttf);
+}
+
+@font-face {
+  font-family: "arimo-ita";
+  src: url(../fonts/Arimo-Italic.ttf);
+}
+
+@font-face {
+  font-family: "arimo-bold-ita";
+  src: url(../fonts/Arimo-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "arimo-bold-ita";
+  src: url(../fonts/Arimo-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "inter-bold";
+  src: url(../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: "inter-reg";
+  src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "inter-med";
+  src: url(../fonts/Inter-Medium.ttf);
+}
+
+/* Navbar brand logo */
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+/* Center the navbar links */
+.navbar-nav {
+  margin: auto;
+}
+
+/* Style for each navbar item */
+.nav-item {
+  font-weight: bold;
+  font-family: "sub-font-bold";
+}
+
+/* Additional styling for the navbar */
+.navbar {
+  border-bottom: 1px solid rgb(32, 14, 14);
+  padding: 10px 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.welcome-sec {
+  padding: 8%;
+}
+
+.clock {
+  position: relative;
+}
+
+.clock::before,
+.clock::after {
+  content: "";
+  position: absolute;
+  width: calc(50% - 100px);
+  top: 50%;
+  border-top: 1.5px solid black;
+}
+
+.clock::before {
+  left: 0;
+  transform: translateY(-80%);
+}
+
+.clock::after {
+  right: 0;
+  transform: translateY(-80%);
+}
+
+.list-unstyled li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Services */
+.list-unstyled li a {
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.list-unstyled li p {
+  margin: 0;
+}
+
+/* Center the button */
+.centered-button {
+  text-align: center;
+}
+
+/* Style the button */
+.centered-button a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Create the underline */
+.centered-button a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+/* Animate the underline on hover */
+.centered-button a:hover::before {
+  width: 100%;
+}
+
+/* RFA Contents */
+.image-div {
+  padding-top: 15%;
+  margin-bottom: 20px;
+}
+
+/* Style the images */
+.image-div img {
+  width: 100%;
+  height: 5rem;
+}
+
+/* Style the paragraphs */
+.image-div p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Style for the rectangular boxes */
+.box {
+  border: 1.5px solid black;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: transparent;
+  height: 400px;
+  width: 360px;
+}
+
+/* Style for the headings */
+.box h3 {
+  margin-top: 0;
+  /* Remove default margin */
+  margin-bottom: 10px;
+  /* Spacing between heading and paragraph */
+}
+
+/* Style for the paragraphs */
+.box p {
+  margin-top: 0;
+  /* Remove default margin */
+}
+
+/* MISSION AND VISION */
+h3 {
+  margin-top: 0;
+  /* Remove default margin */
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  border-top: 1.5px solid black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 15px 0;
+}
+
+/* */
+
+.login-form > a {
+  color: black;
+}
+
+.login-form,
+a:hover {
+  color: black;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  background-color: #222222; /* Green */
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* LOGIN.PHP */
+#forgot-password {
+  color: black;
+  font-style: italic;
+}
+
+#terms-conditions {
+  font-size: small;
+}
+
+
+
+.login {
+  text-decoration: underline;
+}
+
+.already-have-account,
+p,
+a {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+}
+
+/* VERIFICATION - PUBLIC */
+.form-control {
+  background-color: #d7d7d7;
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid #000;
+  margin: 20px 0;
+}
+
+/* FAQs */
+/* Custom CSS for search bar */
+.custom-search-bar {
+  border: none;
+  border-bottom: 2px solid #333;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent !important;
+}
+
+.custom-search-btn {
+  background-color: #d9d9d9;
+  border: none;
+  color: #fff;
+  border-radius: 0;
+}
+
+.custom-search-btn img {
+  max-width: 100%;
+}
+/* Custom styles for the scrollable container */
+.scrollable-container {
+  max-width: 550px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+
+/* Optional: Style for scrollbar */
+.scrollable-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.scrollable-content {
+  padding: 30px;
+}
+
+/* PUBLIC SIDE - DASHBOARD */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding-top: 20px;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+.sidebar a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #e3e3e3;
+}
+
+.sidebar a:hover {
+  background-color: #e3e3e3;
+}
+
+.content {
+  margin-left: 0;
+  transition: margin-left 0.3s;
+}
+
+.content.shifted {
+  margin-left: 250px; /* Shift content to the right */
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  margin-top: 80px;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.rectangle {
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+/* RFA FORM P2 */
+.left-category:hover {
+  color: #333;
+}
+
+/* PREVIEW RFA GROUP */
+.modal-header .close:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ADMIN */
+.table-bordered tr {
+  border-bottom: 2px solid black;
+}
+
+.table-bordered td,
+.table-bordered th {
+  text-align: center;
+  border: none;
+}
+
+.popover {
+  background-color: white;
+  border: black 2px solid;
+  box-shadow: none;
+  border-radius: 0;
+  width: 10%;
+}
+.popover-header {
+  background-color: white;
+  border-bottom: none;
+  margin-top: 2%;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+
+}
+.table th,
+.table td {
+  border: none;
+}
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table td,
+.table th {
+  border-color: transparent !important;
+}
+
+/* SENA RECORDS */
+
+.btn-hover:hover {
+  color: #45a049; /* Change background color on hover */
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+.column {
+  flex: 1;
+  margin-right: 10px;
+}
+.column:last-child {
+  margin-right: 0;
+}
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  padding-right: 30px; /* Adjust as needed to fit the icon */
+}
+
+.input-with-icon img.icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/* TABLE SENA RECORDS */
+
+.table-sena-records {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border: 3px solid #304DA5; /* Add border to the table */
+  border-radius: 7px;
+}
+
+.table-sena-records th,
+.table-sena-records td {
+  border-bottom: 2px solid #304DA5; /* Add bottom border to each cell */
+  padding: 8px;
+  text-align: center;
+  color:rgb(20, 15, 15);
+}
+
+.table-sena-records td {
+  font-family: Arial;
+}
+
+.table-sena-records th {
+  background-color: transparent;
+  text-align: center;
+  border-bottom: 3px solid #304DA5; /* Adjust the thickness of the bottom border for the header */
+  font-family: "sub-font-bold";
+}
+
+.table-sena-records td:last-child,
+.table-sena-records th:last-child {
+  border-right: none; /* Remove right border for last column */
+}
+
+.button-container {
+  background-color: #465DA3;
+  border-radius: 5px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 3px;
+}
+
+.button {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* SENA RECORDS FRAME */
+/* Style for the container */
+.checkbox-container {
+  display: flex;
+  flex-direction: column; /* Arrange checkboxes in a single column */
+}
+
+/* Style for the custom checkboxes */
+.sena-rec-checkboxes {
+  margin-bottom: 10px; /* Add some space between checkboxes */
+}
+
+/* Hide the default checkboxes */
+.sena-rec-checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the custom checkbox appearance */
+.sena-rec-checkboxes label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  line-height: 26px; /* Adjust line height */
+}
+
+/* Create the checkbox design */
+.sena-rec-checkboxes label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black; /* Set border color */
+  background-color: white; /* Set background color */
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 4px; /* Adjust border radius for rounded corners */
+}
+
+/* Style for the checkbox label text */
+.sena-rec-checkboxes label span {
+  vertical-align: middle;
+  padding-left: 40px; /* Add space for the checkbox */
+  font-size: 20px; /* Increase font size of the text */
+}
+
+/* Add the checkmark inside the checkbox when checked */
+.sena-rec-checkboxes input[type="checkbox"]:checked + label::before {
+  background-color: black; /* Change background color when checked */
+}
+
+/* Style for the checkmark */
+.sena-rec-checkboxes label::after {
+  content: url(../assets/check.svg); /* Unicode character for checkmark */
+  display: none;
+  position: absolute;
+  left: 5px; /* Adjust position of checkmark */
+  top: -2px; /* Adjust position of checkmark */
+  color: white; /* Checkmark color */
+  font-size: 10px; /* Increase checkmark size */
+}
+
+/* Show the checkmark when the checkbox is checked */
+.sena-rec-checkboxes input[type="checkbox"]:checked + label::after {
+  display: block;
+}
+
+/* Style for the label */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style for the text area */
+#remarks-textarea {
+  width: 93%;
+  max-width: 100%; /* Adjust the maximum width as needed */
+  height: 400px; /* Set the initial height */
+  resize: vertical; /* Allow vertical resizing */
+  font-family: Arial;
+  font-size: 1rem;
+  background-color: #e5eeff;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 auto; /* Center the text area horizontally */
+}
+
+/* Style for the button container */
+.btn-container {
+  display: flex; /* Use flexbox for layout */
+}
+
+.right-button {
+  float: right;
+  border-radius: 25px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.right-button:hover {
+  background-color: black; /* Change the color on hover */
+}
+
+.left-button {
+  float: left;
+  border-radius: 25px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.input-group {
+  display: inline-block;
+  margin-right: 20px; /* Adjust the spacing between input fields */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  display: block;
+  font-weight: bold;
+  font-family: Arial;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-properties-container {
+  display: flex;
+}
+
+.text-properties {
+  background-color: transparent;
+  border: none;
+  width: 50px; /* Adjust the width of the buttons as needed */
+  height: 50px; /* Adjust the height of the buttons as needed */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-properties img {
+  width: 100%; /* Make the image fill the button */
+  height: 100%; /* Make the image fill the button */
+}
+
+.text-properties:hover img {
+  background-color: whitesmoke;
+}
+
+.text-properties:hover {
+  background-color: transparent;
+}
+
+.alignment {
+  display: flex;
+}
+
+.align-properties img {
+  width: 100%; /* Make the image fill the button */
+  height: 100%; /* Make the image fill the button */
+}
+
+.align-properties:hover img {
+  background-color: whitesmoke;
+}
+
+.align-properties:hover {
+  background-color: transparent;
+}
+
+.align-properties {
+  background-color: transparent;
+  border: none;
+  width: 50px; /* Adjust the width of the buttons as needed */
+  height: 50px; /* Adjust the height of the buttons as needed */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin-right: 2%;
+}
+
+.image-button img {
+  width: 30px;
+  height: 30px;
+}
+
+/* STATUS */
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  position: relative;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  text-align: center;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 25px);
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 2px;
+  background-color: black;
+}
+
+/* ASSIGNMENT TAKE ACTION */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .navbar-brand img:nth-of-type(2) {
+    display: none;
+  }
+}
